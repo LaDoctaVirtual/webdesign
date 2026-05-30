@@ -1,0 +1,186 @@
+*TIPOGRAFÍA DINO*/
+/*************   DINO **************/
+/*Pequeña Libreria para el estudio de intefacez en el diseño web*/
+/*Autor:Ch47ly-Gallardo Armando Carlos*/
+
+/*COLORES DINO*/
+/*
+ #2cfea9
+ #a92cfe
+ #fea92c
+ * */
+ .dino-bkg01{
+background-color:#2cfea9;
+}
+.dino-bkg02{
+background-color:#a92cfe;
+}
+.dino-bkg03{
+background-color:#fea92c;
+}
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url(dino_fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url(dino_fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: MontserratLight;
+    src: url(dino_fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: MontserratMedium;
+    src: url(dino_fonts/Montserrat-Medium.ttf);
+}
+:root{
+--grid-gap: 1rem;
+font-family:MontserratRegular;
+}
+.dino-container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* Sistema de 12 columnas */
+  gap: var(--grid-gap);
+  width: 100%;
+  box-sizing: border-box;
+}
+.dino-col-12  { grid-column: span 1; } 
+.dino-col-8  { grid-column: span 1.5;  }
+.dino-col-6  { grid-column: span 2;  }
+.dino-col-4  { grid-column: span 3;  }
+.dino-col-3  { grid-column: span 4;  }
+.dino-col-2  { grid-column: span 6;  }
+.dino-col-1 { grid-column: span 12;  } /*una columna que se extiende span el espacio total de las 12*/
+
+/* Responsive: Una sola columna en pantallas pequeñas */
+@media (max-width: 914px) {
+  .dino-container {
+    grid-template-columns: 1fr; 
+    gap: 0.5rem;
+    
+  }
+  
+  [class^="dino-col"] {
+    grid-column: span 1;
+    text-align: center;
+  }
+}
+/*TEXTO*/
+h1 {
+font-family:MontserratExtraBold;
+font-size:32px;
+margin: 0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+p {
+font-size:16px;
+margin: 0;
+padding:0;
+}
+.dino_txt_center {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.dino-text-left {
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+}
+.dino-text-right {
+text-align: right;
+margin-left: auto;
+margin-right: auto;
+}
+/*IMAGEN*/
+.dino-img{
+max-width: 100%;
+height:auto;
+}
+
+/*botones*/
+
+.dino-button-black {
+	background-color: #000000;
+	border: 1px solid #000000;
+     color: #ffffff;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-black:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+.dino-button-white {
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+     color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-white:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+.dino-button-ldvd01 {
+	background-color: #00007e;
+	border: 1px solid #0000ec;
+     color: white;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-ldvd01:hover {
+    background-color: #13bdc2;
+    color:#00007e;
+}
+.dino-button-ldvd02 {
+	background-color: #fea92c;
+	border: 1px solid #ffffff;
+     color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-ldvd02:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+.dino-button-ldvd03 {
+	background-color: #fef0cb;
+	border: 1px solid #ffffff;
+     color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-ldvd03:hover {
+    background-color: #000000;
+    color:#ffffff;
+}

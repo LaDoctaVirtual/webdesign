@@ -1,0 +1,252 @@
+/* =============================================
+   HOTSPOT
+   ============================================= */
+.ldv-imghotspot {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.ldv-imghotspot img {
+  display: block;
+  height: auto;
+}
+
+.ldv-hotspot {
+  position: absolute;
+  border: 2px solid transparent;
+  transition: background 0.3s;
+}
+
+.ldv-hotspot:hover {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: white;
+}
+
+/* Imagen superpuesta */
+.ldv-imgSobre {
+  position: absolute;
+  top: 2%;
+  left: 26.5%;
+  width: 46%;
+  height: auto;
+}
+
+/* Posiciones de cada hotspot */
+.ldv-link-youtube { top: 6.9%;  left: 75%; width: 21.5%; height: 5%; }
+.ldv-link-insta   { top: 12.9%; left: 75%; width: 21.5%; height: 5%; }
+.ldv-link-tiktok  { top: 18.5%; left: 75%; width: 21.5%; height: 5%; }
+.ldv-link-ldv     { top: 69%;   left: 4%;  width: 32.3%; height: 24%; }
+
+/* =============================================
+   SCROLL
+   ============================================= */
+#destino {
+  scroll-behavior: smooth;
+}
+
+/* =============================================
+   ANIMACIONES
+   ============================================= */
+
+/* Pulse (hover sobre imagen sobre) */
+.dino-container:hover .ldv-efect00 {
+  animation: pulse 0.7s ease-in-out 2 alternate forwards;
+}
+@keyframes pulse {
+  from { transform: scale(1); }
+  to   { transform: scale(1.12); }
+}
+
+/* Balanceo */
+.dino-container:hover .ldv-efect01 {
+  animation: balanceo 0.8s ease-in-out;
+}
+@keyframes balanceo {
+  0%   { transform: rotate(0deg)  scale(1); }
+  25%  { transform: rotate(-4deg) scale(1.05); }
+  50%  { transform: rotate(4deg)  scale(1.1); }
+  75%  { transform: rotate(-2deg) scale(1.05); }
+  100% { transform: rotate(0deg)  scale(1); }
+}
+
+/* Temblor */
+.dino-container:hover .ldv-efect02 {
+  animation: shake 0.5s ease-in-out;
+}
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-10px); }
+  50%  { transform: translateX(10px); }
+  75%  { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+/* Flotando */
+.dino-container:hover .ldv-efect03 {
+  animation: float 1.6s ease-in-out;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-18px); }
+}
+
+/* =============================================
+   BLOQUE I
+   ============================================= */
+.ldv_blq01-HeroImg01 { display: none; }
+
+@media (max-width: 914px) {
+  .ldv_blq01-HeroImg00 { display: none; }
+  .ldv_blq01-HeroImg01 { display: block; }
+  .ldv_blq01-Lredes    { display: block; }
+}
+
+.ldv_blq01-Lredes { display: none; }
+
+.ldv_blq01-imgLredes {
+  width: 18%;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+/* =============================================
+   BLOQUE II — Fondos
+   ============================================= */
+.ldv-bck01 { background-color: #fea92c; }
+.ldv-bck02 { background-color: black; }
+.ldv-bck03 { background-color: #13bdc2; }
+
+/* Centrado de contenido */
+.ldv-centerDiv01 {
+  margin: 10% 25% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.ldv-centerButton01 {
+  margin: 7% 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.ldv-centerButton02 {
+  margin: 10% 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+@media (max-width: 914px) {
+  .ldv-resmarg01       { padding-block: 15px; }
+  .ldv-centerButton02  { margin-block: 0; }
+}
+
+.ldv-text01 {
+  margin: 0;
+  padding: 0;
+  font-size: clamp(1rem, 1.25vw, 2rem);
+  max-width: 70ch;
+}
+
+/* Marquesina */
+.ldv-marquesina {
+  background-color: red;
+  color: white;
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Imágenes footer bloque II */
+.ldv_blq02-imgF02 { display: none; }
+
+@media (max-width: 914px) {
+  .ldv_blq02-imgF01 { display: none; }
+  .ldv_blq02-imgF02 { display: block; }
+}
+
+/* =============================================
+   BLOQUE III
+   ============================================= */
+.ldv-bck04 { background-color: #00007e; }
+.ldv-bck05 { background-color: #13bdc2; }
+
+.ldv_blq03-ContainerImgs {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.ldv_blq03-imgBase {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Imagen superpuesta (base: oculta, visible en hover) */
+.ldv_blq03-imgSobre,
+.ldv_blq03-imgSobre2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.ldv_blq03-imgSobre { display: none; }
+
+.ldv_blq03-ContainerImgs:hover .ldv_blq03-imgSobre  { display: block; }
+.ldv_blq03-ContainerImgs:hover .ldv_blq03-imgSobre2 { display: none; }
+
+/* Texto bloque III */
+.ldv-centerDiv02 {
+  margin: 14% 25% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: #00007e;
+}
+
+.ldv-centerButton03 {
+  margin: 7% 25% 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.ldv_blq03-linesF {
+  margin: 0;
+  padding: 0;
+}
+
+.ldvd-margin04 {
+  margin-inline-start: 24%;
+  margin-block: 13%;
+}
+
+@media (max-width: 914px) {
+  .ldvd-margin04 { margin: 20px; }
+}
+
+.ldvd-centradoTxt01 {
+  display: grid;
+  place-items: center;
+}
+
+.ldvd-footerTxt01 {
+  font-family: Ubuntu;
+  margin: 3px;
+}

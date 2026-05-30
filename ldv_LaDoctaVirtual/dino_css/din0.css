@@ -1,0 +1,180 @@
+
+/*TIPOGRAFÍA DINO*/
+/*************   DINO **************/
+/*Pequeña Libreria para el estudio de intefacez en el diseño web*/
+/*Autor:Ch47ly-Gallardo Armando Carlos*/
+
+/*COLORES DINO*/
+/*
+ #2cfea9
+ #a92cfe
+ #fea92c
+ * */
+
+.dino-bkg01{
+background-color:#2cfea9;
+}
+.dino-bkg02{
+background-color:#a92cfe;
+}
+.dino-bkg03{
+background-color:#fea92c;
+}
+
+/*TIPOGRAFÍA DINO*/
+
+@font-face {
+    font-family: MontserratRegular;
+    src: url(dino_fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: MontserratExtraBold;
+    src: url(dino_fonts/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: MontserratLight;
+    src: url(dino_fonts/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: MontserratMedium;
+    src: url(dino_fonts/Montserrat-Medium.ttf);
+}
+
+body
+{
+font-family:MontserratRegular;
+/*font-family:MontserratExtraBold;*/
+/*font-family:UbuntuRegular;*/
+}
+
+.dino-container{
+ display:block;
+margin:0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+overflow:auto;
+}
+
+/*GRILLA-9-12*/
+
+
+.dino-col-1{
+ width: 99.99%;
+
+}
+.dino-col-2{
+ width: 49.99%;
+
+}
+.dino-col-3{
+ width: 33.33%;
+
+}
+.dino-col-4{
+ width: 25%;
+}
+
+.dino-col-12{
+ width: 8.33%;
+
+}
+
+.dino-col-2{
+ float:left;
+ height:auto;
+padding-right: 0px;
+padding-left: 0px;
+padding-top: 0px;
+padding-bottom: 0px;
+box-sizing: border-box;
+}
+@media all and (max-width: 700px) {
+    .dino-col-2 {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+    }
+}
+/*TEXTO*/
+h1 {
+font-family:MontserratExtraBold;
+font-size:32px;
+margin: 0px 0px 0px 0px;
+padding:0px 0px 0px 0px;
+}
+
+p {
+font-size:16px;
+margin: 0;
+padding:0;
+}
+.dino_txt_center {
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+}
+.dino-text-left {
+text-align: left;
+margin-left: auto;
+margin-right: auto;
+}
+.dino-text-right {
+text-align: right;
+margin-left: auto;
+margin-right: auto;
+}
+/*IMAGEN*/
+.dino-img{
+max-width: 100%;
+height:auto;
+}
+/*DINO-BOTON-CLASICO01*/
+.dino-button-white {
+	background-color: #ffffff;
+	border: 1px solid #ffffff;
+     color: black;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-white:hover {
+    background-color: #000000;
+    color:#ffffff;
+}
+
+.dino-button-black {
+	background-color: #000000;
+	border: 1px solid #000000;
+     color: #ffffff;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-black:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
+
+.dino-button-gray {
+	background-color: #939393;
+	border: 1px solid #939393;
+     color: #000000;
+    padding: 4px 20px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.dino-button-gray:hover {
+    background-color: #ffffff;
+    color:#000000;
+}
